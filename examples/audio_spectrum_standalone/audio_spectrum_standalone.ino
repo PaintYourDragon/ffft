@@ -18,12 +18,9 @@ uint16_t     spectrum[FFT_N/2]; /* Spectrum output buffer */
 #define A   A0
 #define B   A1
 #define C   A2
-//#define CLK 8  // MUST be on PORTB!
-//#define LAT A3
-//#define OE  9
-#define CLK 9  // MUST be on PORTB!
-#define LAT 8
-#define OE  8
+#define CLK 8  // MUST be on PORTB!
+#define LAT A3
+#define OE  9
 RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
 
 byte peak[32], count = 0;
